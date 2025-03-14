@@ -23,7 +23,53 @@
   .poema-section {
     padding: 50px 0;
   }
+  /* Colores temáticos */
+:root {
+    --color-rojo-romantico: #8B0000; /* Rojo oscuro romántico */
+    --color-beige: #F5F5DC; /* Beige para el texto */
+    --color-dorado: #D4AF37; /* Dorado para detalles */
+  }
   
+  body {
+    background-color: var(--color-rojo-romantico);
+    color: var(--color-beige);
+    font-family: 'Georgia', serif; /* Fuente de respaldo */
+    overflow-x: hidden; /* Para evitar scroll horizontal */
+  }
+  
+  .bg-romantico {
+    background-color: var(--color-rojo-romantico);
+  }
+  
+  .text-beige {
+    color: var(--color-beige);
+  }
+  
+  .poema-section {
+    padding: 50px 0;
+  }
+  
+  .foto-enamorada {
+    border: 5px solid var(--color-dorado);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    max-width: 300px;
+    position: relative;
+  }
+  
+  /* Tipografía */
+  .poema {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    font-family: 'Dancing Script', cursive; /* Fuente para el poema */
+  }
+  
+  h1 {
+    color: var(--color-dorado);
+    font-family: 'Great Vibes', cursive; /* Fuente para el título */
+    font-size: 3rem;
+  }
+  
+  /* Resto del código... */
   .foto-enamorada {
     border: 5px solid var(--color-dorado);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
@@ -90,4 +136,6 @@
     50% {
       transform: scale(1.2);
     }
+
+    
   }
